@@ -1,0 +1,3 @@
+[submodule "public/extapp/vendor/mvc"]
+	path = public/extapp/vendor/mvc
+	url = git://github.com/extmvc/extmvc.git
