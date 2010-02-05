@@ -1,0 +1,199 @@
+/**
+ * @author Robert Dougan
+ * @email  rdougan@me.com
+ * @web    http://dougan.me
+ */
+
+/* @group body */
+body {
+  font-family:'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size:14px;
+}
+/* @end */
+
+/* @group no-select */
+div,
+span,
+a,
+h1 {
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  user-select:none;
+  
+  cursor:default;
+}
+a {
+  cursor:pointer;
+  cursor:hand;
+}
+/* @end */
+
+/* @group clearfix */
+.clearfix:after {
+	content:".";
+	
+	display:block;
+	
+	clear:both;
+	
+	visibility:hidden;
+	
+	line-height:0;
+	
+	height:0;
+}
+.clearfix { display:inline-block; }
+html[xmlns] .clearfix { display:block; }
+* html .clearfix { height:1%; }
+/* @end */
+
+/* @group wrapper */
+#wrapper {
+  width:450px;
+  
+  margin:0 auto;
+}
+/* @end */
+
+/* @group header */
+#header {
+  position:relative;
+  
+  margin:75px 0 7px;
+}
+#header h1 {
+  font-family:'HelveticaNeue-CondensedBold', 'Helvetica Neue Bold Condensed', Helvetica, Arial, serif;
+  font-size:26px;
+  font-weight:bold;
+  
+  border-bottom:1px solid #ccc;
+}
+/* @end */
+
+/* @group menu */
+#menu {
+  position:absolute;
+  bottom:1px;
+  right:0;
+  
+  white-space:nowrap;
+}
+#menu > a {
+  display:block;
+  
+  float:right;
+  
+  color:#666;
+  font-size:12px;
+  text-decoration:none;
+  
+  margin:0 0 0 7px;
+  padding:2px 5px;
+  
+  background:#e5e5e5;
+}
+#menu > a:hover { background:#d9d9d9; }
+#menu > a.active {
+  color:#fff;
+  
+  background:#007fe0;
+}
+#menu > a.active:hover { background:#006cc0; }
+/* @end */
+
+/* @group blog */
+#content > div.blog {}
+#content > div.blog div.entry {
+  background:#e7e7e7;
+  background:-webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#e2e2e2));
+  
+  margin:0 0 7px 0;
+  padding:7px;
+  
+  text-shadow:0 1px 0 #fff;
+}
+#content > div.blog div.entry.x-over {
+  background:#e0e0e0;
+  background:-webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#dadada));
+}
+/*header*/
+#content > div.blog div.entry > h2 {
+  color:#888;
+  font-family:'HelveticaNeue-CondensedBold', 'Helvetica Neue Bold Condensed', Helvetica, Arial, serif;
+  font-size:16px;
+  font-weight:bold;
+  line-height:12px;
+  text-transform:uppercase;
+  
+}
+#content > div.blog div.entry > h2 > span {
+  color:#bbb;
+  font-weight:normal;
+}
+#content > div.blog div.entry > h2 > span.extend {
+  float:right;
+  
+  font-size:10px;
+}
+/*body*/
+#content > div.blog div.entry > p {
+  display:none;
+  
+  margin:7px 0 0 0;
+  
+  font-size:13px;
+  line-height:17px;
+  text-align:justify;
+}
+/*code*/
+#content > div.blog div.entry .syntaxhighlighter {
+  background:#fff !important;
+  
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  margin:7px 0 7px 0 !important;
+  
+  width:434px !important;
+  
+  text-shadow:none;
+}
+/*tags*/
+#content > div.blog div.entry > span {
+  display:none;
+  
+  margin:7px 0 0 0;
+  
+  font-size:10px;
+  text-shadow:0 1px 0 #ddd;
+}
+#content > div.blog div.entry > span a:link,
+#content > div.blog div.entry > span a:active,
+#content > div.blog div.entry > span a:visited {
+  display:inline-block;
+  
+  margin:0 3px 0 0;
+  padding:2px 4px;
+  
+  background:#ccc;
+  background:-webkit-gradient(linear, left top, left bottom, from(#ccc), to(#bbb));
+  
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#666;
+  text-decoration:none;
+}
+#content > div.blog div.entry > span a:hover {
+  background:-webkit-gradient(linear, left top, left bottom, from(#c0c0c0), to(#b0b0b0));
+  
+  color:#555;
+}
+
+#content > div.blog div.entry:first-child > h2 > span.extend { visibility:hidden; }
+#content > div.blog div.entry:first-child > p,
+#content > div.blog div.entry:first-child > code,
+#content > div.blog div.entry:first-child > span { display:block; }
+/* @end */
