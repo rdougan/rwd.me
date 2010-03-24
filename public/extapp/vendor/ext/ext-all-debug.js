@@ -34350,7 +34350,7 @@ Ext.Direct.addProvider(
                 "len":1
             }]
         },
-        "namespace":"myApplication",// namespace to create the Remoting Provider in
+        "namespace":"RWDlication",// namespace to create the Remoting Provider in
     },{
         type: 'polling', // create a {@link Ext.direct.PollingProvider} 
         url:  'php/poll.php'

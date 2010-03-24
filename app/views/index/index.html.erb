@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>rwd.me</title>
+	
+	<!--
+		@author Robert Dougan
+		@email  rdougan@me.com
+		@web    http://dougan.me
+	-->
+	
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="stylesheets/reset-fonts.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" charset="utf-8">
+	
+	<!-- syntaxhighlighter -->
+	<script type="text/javascript" src="vendor/syntaxhighlighter/js/shCore.js"></script>
+	<script type="text/javascript" src="vendor/syntaxhighlighter/js/shBrushCss.js"></script>
+	<script type="text/javascript" src="vendor/syntaxhighlighter/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="vendor/syntaxhighlighter/js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="vendor/syntaxhighlighter/js/shBrushRuby.js"></script>
+	<link rel="stylesheet" href="vendor/syntaxhighlighter/css/shCore.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="vendor/syntaxhighlighter/css/shThemeRWD.css" type="text/css" media="screen" charset="utf-8">
+	
+	<!-- javascripts -->
+	<script src="javascripts/ext-core/ext-core-debug.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/history.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/tabs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/slices.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/entries.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/init.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		
+		<div id="header">
+			<h1>robert dougan</h1>
+			<div id="menu">
+				<span ref="flickr">flickr</span>
+				<span ref="blog" class="active">blog</span>
+			</div>
+		</div>
+		
+		<div id="content">
+			
+			<div class="blog" style="display:none;">
+				<% @posts.each do |post| %>
+				<div class="entry blog" ref="<%= post.id %>/<%= post.title.underscore.gsub(' ', '-') %>">
+					<h2><%= post.title %> <span><%= post.created_at.strftime('%d/%m/%Y') %></span><!--<span class="extend">Click to extend</span>--></h2>
+					<div>
+						<%= post.body %>
+					</div>
+					<!--<span class="tags"><a href="#">tag1</a><a href="#">tag2</a><a href="#">tag3</a></span>-->
+				</div>
+				<% end %>
+			</div>
+			
+			<div class="flickr" style="display:none;">
+				<div class="entry flickr">
+					<h2>Bride Seat <span>12/01/10</span></h2>
+					<div>
+						<div class="gallery">
+							<div class="scroller">
+								<div><img src="http://farm3.static.flickr.com/2798/4454300562_d0d7679be8.jpg" /></div>
+								<div><img src="http://farm5.static.flickr.com/4029/4453522243_62aba6829e.jpg" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact" style="display:none;">
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>

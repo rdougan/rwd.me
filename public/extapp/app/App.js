@@ -1,10 +1,10 @@
 /**
- * @class MyApp.App
+ * @class RWD.App
  * @extends ExtMVC.App
- * The MyApp application.
+ * The RWD application.
  */
 ExtMVC.App.define({
-  name       : "MyApp",
+  name       : "RWD",
   
   /**
    * Sets up the application's Viewport
@@ -52,7 +52,7 @@ ExtMVC.App.define({
     
     this.fireEvent('launched');
     
-    ExtMVC.dispatch('index', 'index');
+    ExtMVC.dispatch('posts', 'index');
     
     Ext.get('loading').remove();  
     Ext.get('loading-mask').fadeOut({remove:true});  

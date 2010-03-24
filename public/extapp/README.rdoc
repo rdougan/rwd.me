@@ -39,11 +39,11 @@ build around this idea.
 
 Once you've chosen your namespace, just run the following command:
 
-ruby script/setup MyAppNamespace
+ruby script/setup RWDNamespace
 
-This will update all files with the default namespace ('MyApp') with the namespace you specify.
+This will update all files with the default namespace ('RWD') with the namespace you specify.
 
-If you can't run the script, you can easily perform the setup yourself - just change the references from the default 'MyApp' namespace to your own 
+If you can't run the script, you can easily perform the setup yourself - just change the references from the default 'RWD' namespace to your own 
 namespace in the following files:
 
 * app/OS.js
@@ -75,7 +75,7 @@ Ext MVC comes with some built-in generators to automate some aspects of applicat
 described below from within the main directory of your Ext MVC application.
 
 Be sure that you have updated your config/settings.yml file before running these, otherwise everything will be namespaced
-to 'MyApp' (see above).
+to 'RWD' (see above).
 
 === Model
 
@@ -85,10 +85,10 @@ Will generate the following files:
 
 in app/models/User.js:
 /**
- * @class MyApp.models.MyModel
+ * @class RWD.models.MyModel
  * @extends ExtMVC.Model
  */
-ExtMVC.Model.define("MyApp.models.User", {
+ExtMVC.Model.define("RWD.models.User", {
   modelName: 'user',
   fields:    [
     {name: 'first_name', type: 'string'},
@@ -103,7 +103,7 @@ Screw.Unit(function() {
   describe("The User class", function() {
     var user;
     before(function() {
-      user = new MyApp.models.User({
+      user = new RWD.models.User({
         //set fields for this model here
       });
     });

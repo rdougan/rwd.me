@@ -1,6 +1,6 @@
 /**
- * @class MyApp.controllers.IndexController
- * @extends MyApp.controllers.ApplicationController
+ * @class RWD.controllers.IndexController
+ * @extends RWD.controllers.ApplicationController
  * Default root controller
  */
 ExtMVC.registerController("index", {

@@ -23,5 +23,5 @@ ExtMVC.router.Router.defineRoutes = function(map) {
   map.connect(":controller/:action/:id");
   
   //if no url, should a default
-  map.root({controller: 'index', action: 'index'});
+  map.root({controller: 'posts', action: 'index'});
 };

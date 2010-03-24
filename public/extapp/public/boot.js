@@ -39,17 +39,21 @@
       
   var fileOrders = {
     production : [
-      'http://extjs.cachefly.net/ext-3.0.0/adapter/ext/ext-base.js',
-      'http://extjs.cachefly.net/ext-3.0.0/ext-all.js',
+      // 'http://extjs.cachefly.net/ext-3.0.0/adapter/ext/ext-base.js',
+      // 'http://extjs.cachefly.net/ext-3.0.0/ext-all.js',
+      '../vendor/ext-3.2-beta/adapter/ext/ext-base-debug.js',
+      '../vendor/ext-3.2-beta/ext-all-debug.js',
       '../vendor/mvc/ext-mvc-all.js',
+      '../vendor/plugins/CodeMirror/CodeMirror/js/codemirror.js',
       'application-all.js'
     ],
     development: [
-      'http://extjs.cachefly.net/ext-3.0.0/adapter/ext/ext-base.js',
-      'http://extjs.cachefly.net/ext-3.0.0/ext-all-debug.js',
-      // 'javascripts/ext-base-debug.js',
-      // 'javascripts/ext-all-debug.js',
-      '../vendor/mvc/ext-mvc-all.js'
+      // 'http://extjs.cachefly.net/ext-3.0.0/adapter/ext/ext-base.js',
+      // 'http://extjs.cachefly.net/ext-3.0.0/ext-all-debug.js',
+      '../vendor/ext-3.2-beta/ext-base-debug.js',
+      '../vendor/ext-3.2-beta/ext-all-debug.js',
+      '../vendor/mvc/ext-mvc-all.js',
+      '../vendor/plugins/CodeMirror/CodeMirror/js/codemirror.js',
     ],
     test       : [
       'http://extjs.cachefly.net/ext-3.0.0/adapter/ext/ext-base.js',

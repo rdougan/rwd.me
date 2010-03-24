@@ -1,5 +1,5 @@
 /**
- * @class MyApp.views.index.Index
+ * @class RWD.views.index.Index
  * @extends Ext.Panel
  * Default Welcome to Ext MVC Panel - replace this with your own thing
  */

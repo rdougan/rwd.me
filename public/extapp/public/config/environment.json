@@ -8,32 +8,37 @@
    * automatically appended
    */
   "stylesheets": [
-    
+    "x-extra"
   ],
   
   //Overrides to include. These files should be located in the config/overrides directory
   "overrides": [
-    
+    "Ext.Component"
   ],
   
   //Plugins to include. Each will load vendor/plugins/SomePlugin/SomePlugin-all.js
   "plugins": [
-    
+    "CodeMirror"
   ],
   
   //All of the models in this application, found in the app/models folder
   "models": [
-    
+    "Post", "Message"
   ],
   
   //All of the controllers in this application, found in the app/controllers folder
   "controllers" : [
-    "Application", "Index"
+    "Application", "Index",
+    
+    "Posts", "Messages"
   ],
   
   //All of the views in this application, as an object with the subfolder inside app/views as the key, and an array of filenames as the value.
   //e.g.: views: {"index": ["Index", "MyView"]} will load /app/views/index/Index.js and app/views/index/MyView.js
   "views": [
+    {"posts"   : ["Index", "New", "Edit", "FormFields"]},
+    {"messages": ["Index"]},
+    
     {"layout": ["Menu"]},
     {"index" : ["Index"]}
   ]

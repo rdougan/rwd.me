@@ -13,7 +13,20 @@ ExtMVC.registerView('layout', 'menu', {
         nodeType: 'async',
         expanded: true,
         children: [
-          
+          {
+            text       : 'Posts',
+            expanded   : true,
+            controller : 'posts',
+            action     : 'index',
+            children   : []
+          },
+          {
+            text       : 'Messages',
+            expanded   : true,
+            controller : 'messages',
+            action     : 'index',
+            children   : []
+          }
         ]
       }
     });
