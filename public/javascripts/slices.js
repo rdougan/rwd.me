@@ -136,8 +136,9 @@ Ext.extend(RWD.ux.SliceManager, Ext.util.Observable, {
    */
   activateDefaultSlice: function() {
     var slice = null,
-        basic = RWD.historyManager.get().split('/')[0],
-        id    = RWD.historyManager.get().split('/')[1],
+        url   = RWD.historyManager.get(),
+        basic = (basic) ? basic.split('/')[0] : "",
+        id    = (basic) ? RWD.historyManager.get().split('/')[1] : "",
         gogo  = false;
     
     //check for entries
