@@ -37213,3 +37213,12 @@ Processing IndexController#index (for 127.0.0.1 at 2010-03-25 23:28:20) [GET]
 Rendering index/index
   [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
 Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-25 23:38:23) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) [0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 49ms (View: 37, DB: 2) | 200 OK [http://rwd.local/]
