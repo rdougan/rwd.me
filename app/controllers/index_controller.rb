@@ -1,7 +1,7 @@
 class IndexController < ApplicationController
   # render index.rhtml
   def index
-    @posts = Post.all(:conditions => { :published => 1 })
+    @posts = Post.all(:conditions => ['published = ?', false])
   end
   
   def admin
