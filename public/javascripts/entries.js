@@ -88,7 +88,7 @@ Ext.extend(RWD.ux.EntryManager, Ext.util.Observable, {
   
   hideAll: function(name) {
     this.entries.each(function(e) {
-      if (e.getAttribute("type") == name) {
+      if (e.getAttribute("type..") == name) {
         e.removeClass('expanded');
         this.collapseEntry(e);
       };
