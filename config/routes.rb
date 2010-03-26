@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
 
-  map.resources :posts
+  map.resources :posts, :collection => {:rss => :get}
   map.resources :messages
   
   map.admin '/extapp/public/admin', :controller => 'index', :action => 'admin'

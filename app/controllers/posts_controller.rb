@@ -12,6 +12,12 @@ class PostsController < ApplicationController
     failure_response
   end
   
+  def rss
+    @posts = Post.find(:all, :order => "created_at DESC", :limit => 10, :conditions => ['published = ?', true])
+    render :layout => false
+    response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
+  
   def show
     @post = Post.find(params[:id])
     success_response @post
