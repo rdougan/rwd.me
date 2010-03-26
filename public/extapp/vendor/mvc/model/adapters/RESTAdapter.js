@@ -309,7 +309,7 @@ ExtMVC.model.plugin.adapter.RESTAdapter = Ext.extend(ExtMVC.model.plugin.adapter
         prefix = instance.modelName.underscore();
     
     for (key in instance.data) {
-      data[prefix + '[' + key + ']'] = instance.data[key];
+      if (instance.data[key] !== undefined) data[prefix + '[' + key + ']'] = instance.data[key];
     }
     
     return data;

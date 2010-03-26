@@ -17,7 +17,7 @@ ExtMVC.registerModel("Post", {
     //   }
     // },
     
-    {name: 'created_at', type: 'date', virtual: true},
-    {name: 'updated_at', type: 'date', virtual: true}
+    {name: 'created_at', type: 'string', virtual: true},
+    {name: 'updated_at', type: 'string', virtual: true}
   ]
 });

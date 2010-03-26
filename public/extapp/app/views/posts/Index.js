@@ -46,8 +46,7 @@ ExtMVC.registerView('posts', 'index', {
       {
         header   : 'Created At',
         dataIndex: 'created_at',
-        sortable : true,
-        renderer : Ext.util.Format.dateRenderer('m/d/Y H:s')
+        sortable : true
       }
     ];
   }

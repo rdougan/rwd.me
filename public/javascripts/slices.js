@@ -137,8 +137,8 @@ Ext.extend(RWD.ux.SliceManager, Ext.util.Observable, {
   activateDefaultSlice: function() {
     var slice = null,
         url   = RWD.historyManager.get(),
-        basic = (basic) ? basic.split('/')[0] : "",
-        id    = (basic) ? RWD.historyManager.get().split('/')[1] : "",
+        basic = (url) ? url.split('/')[0] : "",
+        id    = (url) ? url.split('/')[1] : "",
         gogo  = false;
     
     //check for entries
@@ -157,8 +157,8 @@ Ext.extend(RWD.ux.SliceManager, Ext.util.Observable, {
     
     //check what the default slice is
     if (gogo) slice = this.findSliceByName('blog');
-    else if (!RWD.historyManager.get()) slice = this.findSliceByName('blog');
-    else slice = this.findSliceByName(RWD.historyManager.get());
+    else if (basic) slice = this.findSliceByName(RWD.historyManager.get());
+    else slice = this.findSliceByName('blog');
     
     //active the slice
     if (!slice) return;

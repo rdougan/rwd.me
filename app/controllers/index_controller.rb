@@ -1,7 +1,7 @@
 class IndexController < ApplicationController
   # render index.rhtml
   def index
-    @posts = Post.all(:conditions => ['published = ?', false])
+    @posts = Post.all(:conditions => ['published = ?', true], :order => ["created_at DESC"])
   end
   
   def admin

@@ -3731,7 +3731,7 @@ Ext.apply(Ext.data.Record.prototype, new ExtMVC.model.Base());
  */
 ExtMVC.model.plugin.adapter = {
   initialize: function(model) {
-    var adapter = new this.RESTJSONAdapter();
+    var adapter = new this.RESTAdapter();
     
     Ext.override(Ext.data.Record, adapter.instanceMethods());
     Ext.apply(model, adapter.classMethods());
@@ -4437,7 +4437,7 @@ ExtMVC.model.plugin.adapter.RESTAdapter = Ext.extend(ExtMVC.model.plugin.adapter
         prefix = instance.modelName.underscore();
     
     for (key in instance.data) {
-      data[prefix + '[' + key + ']'] = instance.data[key];
+      if (instance.data[key] !== undefined) data[prefix + '[' + key + ']'] = instance.data[key];
     }
     
     return data;

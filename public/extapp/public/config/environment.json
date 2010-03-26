@@ -18,7 +18,7 @@
   
   //Plugins to include. Each will load vendor/plugins/SomePlugin/SomePlugin-all.js
   "plugins": [
-    "CodeMirror"
+    
   ],
   
   //All of the models in this application, found in the app/models folder
