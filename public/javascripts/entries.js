@@ -88,7 +88,10 @@ Ext.extend(RWD.ux.EntryManager, Ext.util.Observable, {
   
   hideAll: function(name) {
     this.entries.each(function(e) {
-      if (e.hasClass(name)) this.collapseEntry(e);
+      if (e.getAttribute("type") == name) {
+        e.removeClass('expanded');
+        this.collapseEntry(e);
+      };
     }, this);
   },
   
@@ -111,12 +114,14 @@ Ext.extend(RWD.ux.EntryManager, Ext.util.Observable, {
     var content = entry.last();
     if (!content || content.isVisible()) return;
     
-    this.hideAll(entry.dom.className.replace('entry', '').replace(' ', ''));
+    this.hideAll(entry.getAttribute("type"));
     
     if (lol) content.show();
     else content.slideIn('t', {duration:this.defaultAnimationDuration, scope:this});
     
-    if (entry.hasClass('blog')) {
+    entry.addClass('expanded');
+    
+    if (entry.getAttribute("type") == 'blog') {
       var hash = "blog";
       RWD.historyManager.set(hash + "/" + entry.getAttribute('ref'));
     } else {
@@ -145,7 +150,7 @@ Ext.extend(RWD.ux.EntryManager, Ext.util.Observable, {
       this.entries.each(function(e) {
         var e = Ext.get(e.dom);
 
-        if (e.hasClass(name)) {
+        if (e.getAttribute('type') == name) {
           this.expandEntry(e, true);
           return false;
         };

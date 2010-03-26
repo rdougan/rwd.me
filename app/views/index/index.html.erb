@@ -52,7 +52,7 @@
 			
 			<div class="blog" style="display:none;">
 				<% @posts.each do |post| %>
-				<div class="entry blog" ref="<%= post.id %>/<%= post.title.underscore.gsub(' ', '-') %>">
+				<div class="entry" type="blog" ref="<%= post.id %>/<%= post.title.underscore.gsub(' ', '-') %>">
 					<h2><%= post.title %> <span><%= post.created_at.strftime('%d/%m/%Y') %></span><!--<span class="extend">Click to extend</span>--></h2>
 					<div>
 						<%= post.body %>
@@ -63,7 +63,7 @@
 			</div>
 			
 			<div class="flickr" style="display:none;">
-				<div class="entry flickr">
+				<div class="entry" type="flickr">
 					<h2>Bride Seat <span>12/01/10</span></h2>
 					<div>
 						<div class="gallery">
