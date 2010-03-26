@@ -154,6 +154,7 @@ html[xmlns] .clearfix { display:block; }
   
   z-index:1;
 }
+#content > div div.entry:hover > h2 { background:transparent; }
 #content > div div.entry.expanded > h2 { cursor:default; }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   #content > div div.entry > h2 {

@@ -157,7 +157,7 @@ Ext.extend(RWD.ux.SliceManager, Ext.util.Observable, {
     
     //check what the default slice is
     if (gogo) slice = this.findSliceByName('blog');
-    else if (basic) slice = this.findSliceByName(RWD.historyManager.get());
+    else if (basic) slice = this.findSliceByName(basic);
     else slice = this.findSliceByName('blog');
     
     //active the slice
