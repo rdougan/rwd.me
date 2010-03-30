@@ -18,7 +18,7 @@ Rails::Initializer.run do |config|
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
-  config.gem "flickr_fu"
+  # config.gem "flickr_fu"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -42,4 +42,4 @@ end
 
 ActiveRecord::Base.include_root_in_json = false
 
-require 'flickr_fu'
+# require 'flickr_fu'

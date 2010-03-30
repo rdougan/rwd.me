@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rsp stat="ok">
-<contacts page="1" pages="1" per_page="1000" perpage="1000" total="2">
-        <contact nsid="40718771@N00" username="kooop" iconserver="2" iconfarm="1" ignored="0" />
-        <contact nsid="20039881@N00" username="wayoutwest" iconserver="1" iconfarm="1" ignored="0" />
-</contacts>
-</rsp>

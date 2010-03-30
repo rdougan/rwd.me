@@ -5,8 +5,8 @@ class IndexController < ApplicationController
   def index
     @posts = Post.all(:conditions => ['published = ?', true], :order => ["created_at DESC"])
     
-    flickr = Flickr.new(File.join(RAILS_ROOT, 'config', 'flickr.yml'))
-    @photos = flickr.photos.search(:user_id => '27969974@N08', 'per_page' => 25)
+    # flickr = Flickr.new(File.join(RAILS_ROOT, 'config', 'flickr.yml'))
+    # @photos = flickr.photos.search(:user_id => '27969974@N08', 'per_page' => 25)
   end
   
   def admin
