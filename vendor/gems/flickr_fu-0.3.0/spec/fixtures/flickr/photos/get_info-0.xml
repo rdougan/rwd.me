@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rsp stat="ok">
+	<photo id="2984637736" secret="9e5762e027" server="3180" farm="4" dateuploaded="1225297614" isfavorite="0" license="0" rotation="0" media="photo">
+		<owner nsid="80755658@N00" username="Maciej Biłas" realname="Maciej Biłas" location="Rzeszów, Poland"/>
+		<title>Demolition of Hotel Rzeszów</title>
+		<description>
+The last picture from a quite old event. The demolition of the best known hotel in Rzeszów called Hotel Rzeszów.
+		</description>
+		<visibility ispublic="1" isfriend="0" isfamily="0"/>
+		<dates posted="1225297614" taken="2007-04-20 17:56:06" takengranularity="0" lastupdate="1227358764"/>
+		<editability cancomment="0" canaddmeta="0"/>
+		<usage candownload="0" canblog="0" canprint="0"/>
+		<comments>0</comments>
+		<notes/>
+		<tags>
+			<tag id="4963651-2984637736-9769036" author="80755658@N00" raw="Hotel Rzeszów" machine_tag="0">hotelrzeszów
+			</tag>
+			<tag id="4963651-2984637736-9381" author="80755658@N00" raw="demolition" machine_tag="0">demolition
+			</tag>
+			<tag id="4963651-2984637736-1888184" author="80755658@N00" raw="Rzeszów" machine_tag="0">rzeszów
+			</tag>
+			<tag id="4963651-2984637736-8302" author="80755658@N00" raw="Poland" machine_tag="0">poland
+			</tag>
+		</tags>
+		<location latitude="50.041376" longitude="21.999006" accuracy="16" place_id="X.5ul_ucAJtJcT0" woeid="517126">
+			<locality place_id="X.5ul_ucAJtJcT0" woeid="517126">Rzeszów
+			</locality>
+			<county place_id="gUrbqNqYA5n4kv.erw" woeid="12591341">Rzeszów
+			</county>
+			<region place_id="acDFruGYA5lyOpcIVg" woeid="12577943">Subcarpathia
+			</region>
+			<country place_id="0kV97TybAphIxvm14g" woeid="23424923">Poland
+			</country>
+		</location>
+		<geoperms ispublic="1" iscontact="0" isfriend="0" isfamily="0"/>
+		<urls>
+			<url type="photopage">http://www.flickr.com/photos/lvizard/2984637736/
+			</url>
+		</urls>
+	</photo>
+</rsp>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rsp stat="ok">
+	<photo id="2984637736">
+		<location latitude="50.041376" longitude="21.999006" accuracy="16" context="0" place_id="X.5ul_ucAJtJcT0" woeid="517126">
+			<locality place_id="X.5ul_ucAJtJcT0" woeid="517126">Rzeszów</locality>
+			<county place_id="gUrbqNqYA5n4kv.erw" woeid="12591341">Rzeszów</county>
+			<region place_id="acDFruGYA5lyOpcIVg" woeid="12577943">Subcarpathia</region>
+			<country place_id="0kV97TybAphIxvm14g" woeid="23424923">Poland</country>
+		</location>
+	</photo>
+</rsp>

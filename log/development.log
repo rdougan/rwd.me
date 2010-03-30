@@ -1,0 +1,161 @@
+# Logfile created on Fri Mar 26 02:30:31 +0000 2010  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-26 02:41:49) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 375ms (View: 354, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-26 02:43:04) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 3512ms (View: 3, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-26 02:49:19) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 3319ms (View: 8, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-26 02:53:47) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 762ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-26 02:55:06) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1261ms (View: 3, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-30 17:31:45) [GET]
+  [4;36;1mPost Load (8.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1922ms (View: 164, DB: 10) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-30 17:32:52) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1368ms (View: 6, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-30 17:43:59) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1648ms (View: 36, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-30 17:44:03) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1159ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-30 17:44:56) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 1164ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 17:52:32) [GET]
+
+ActionController::RoutingError (No route matches "/rss" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 17:52:34) [GET]
+
+ActionController::RoutingError (No route matches "/rss" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#rss (for 127.0.0.1 at 2010-03-30 17:53:06) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC LIMIT 10[0m
+Rendering posts/rss
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 27ms (View: 9, DB: 1) | 200 OK [http://rwd.local/rss]
