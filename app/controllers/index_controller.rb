@@ -1,12 +1,14 @@
-# require 'flickr'
-
 class IndexController < ApplicationController
   # render index.rhtml
   def index
     @posts = Post.all(:conditions => ['published = ?', true], :order => ["created_at DESC"])
+    @tweet = Twitter::Search.new.from('rdougan').first.text
+    @tweet = @tweet.gsub(/(^|\s)@(\w+)/, '<span class="username">\0</span>')
     
     # flickr = Flickr.new(File.join(RAILS_ROOT, 'config', 'flickr.yml'))
     # @photos = flickr.photos.search(:user_id => '27969974@N08', 'per_page' => 25)
+  rescue
+    @posts = Post.all(:conditions => ['published = ?', true], :order => ["created_at DESC"])
   end
   
   def admin

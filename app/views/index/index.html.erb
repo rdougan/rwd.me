@@ -40,6 +40,13 @@
 
 <body>
 	
+	<% if @tweet %>
+	<div id="twitter">
+		<span>Twitter</span>
+		<div class="message"><%= @tweet %></div>
+	</div>
+	<% end %>
+	
 	<div id="wrapper">
 		
 		<div id="header">

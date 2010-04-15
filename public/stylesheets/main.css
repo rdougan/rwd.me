@@ -28,6 +28,11 @@ h2 {
 }
 /* @end */
 
+/* @group text selection background */
+::selection { background:#e5e5e5; }
+::-moz-selection { background:#e5e5e5; }
+/* @end */
+
 /* @group links */
 a {
   cursor:pointer;
@@ -126,13 +131,15 @@ html[xmlns] .clearfix { display:block; }
   color:#fff;
   
   background:#007fe0;
+  
+  cursor:default;
 }
 #menu > span.active:hover {
-  text-shadow:0 1px 0 #005fa8;
+  color:#fff;
   
-  background:#006cc0;
+  background:#007fe0;
   
-  border-color:#005fa8;
+  cursor:default;
 }
 /* @end */
 
@@ -307,5 +314,30 @@ html[xmlns] .clearfix { display:block; }
 	-webkit-animation-duration:1s;
 	-webkit-animation-iteration-count:1;
 	-webkit-animation-timing-function:linear;
+}
+/* @end */
+
+/* @group twitter */
+#twitter {
+  position:absolute;
+  bottom:50px;
+  left:50px;
+  
+  color:#333;
+  font-family:Georgia, "Nimbus Roman No9 L", serif;
+  font-size:18px;
+  font-style:italic;
+  text-shadow:0 1px 0 #ddd;
+}
+#twitter span.username {
+  color:#007fe0;
+}
+#twitter > span {
+  color:#aaa;
+  font-family:'HelveticaNeue-CondensedBold', 'Helvetica Neue Bold Condensed', Helvetica, Arial, serif;
+  font-size:10px;
+  font-style:normal;
+  text-shadow:0 1px 0 #fff;
+  text-transform:uppercase;
 }
 /* @end */
