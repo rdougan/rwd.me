@@ -5,9 +5,12 @@
  */
 
 /* @group body */
-body {
+body,
+html {
   font-family:'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size:14px;
+  
+  background:url(../images/background.png);
 }
 /* @end */
 
@@ -57,7 +60,7 @@ html[xmlns] .clearfix { display:block; }
 
 /* @group wrapper */
 #wrapper {
-  width:514px;
+  width:614px;
   
   margin:0 auto;
 }
@@ -99,11 +102,21 @@ html[xmlns] .clearfix { display:block; }
   color:#666;
   font-size:12px;
   text-decoration:none;
+  text-shadow:0 1px 0 #006fc4;
   
   margin:0 0 0 7px;
   padding:2px 5px;
   
   background:#e5e5e5;
+  
+  border:1px solid #006fc4;
+  border-width:1px 1px 0 1px;
+  border-top-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -webkit-border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-right-radius:3px;
   
   cursor:pointer;
   cursor:hand;
@@ -114,7 +127,13 @@ html[xmlns] .clearfix { display:block; }
   
   background:#007fe0;
 }
-#menu > span.active:hover { background:#006cc0; }
+#menu > span.active:hover {
+  text-shadow:0 1px 0 #005fa8;
+  
+  background:#006cc0;
+  
+  border-color:#005fa8;
+}
 /* @end */
 
 /* @group entries - used for blog + flickr */
@@ -129,11 +148,13 @@ html[xmlns] .clearfix { display:block; }
   min-height:12px;
   
   text-shadow:0 1px 0 #fff;
+  
+  opacity:0.7;
+  
+  -webkit-transition:opacity 250ms linear;
 }
-#content > div div.entry:hover {
-  background:#e0e0e0;
-  background:-webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#dadada));
-}
+#content > div div.entry.expanded,
+#content > div div.entry:hover { opacity:1; }
 /*header*/
 #content > div div.entry > h2 {
   position:absolute;
@@ -148,7 +169,7 @@ html[xmlns] .clearfix { display:block; }
   cursor:hand;
   
   height:19px;
-  width:500px;
+  width:600px;
   
   background:-webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(rgba(231, 231, 231, 0)));
   
@@ -169,8 +190,18 @@ html[xmlns] .clearfix { display:block; }
   float:right;
   
   font-size:10px;
+  
+  opacity:1;
+  -webkit-transition:opacity 250ms linear;
 }
+#content > div div.entry.expanded > h2 > span.extend { opacity:0; }
 /*body*/
+#content > div div.entry div.body {
+  opacity:0;
+  -webkit-transition:opacity 1s linear;
+}
+#content > div div.entry.expanded div.body { opacity:1; }
+
 #content > div div.entry p {
   padding:7px 0 0 0;
   
@@ -190,7 +221,7 @@ html[xmlns] .clearfix { display:block; }
   
   margin:7px 0 0 0 !important;
   
-  width:498px !important;
+  width:598px !important;
   
   text-shadow:none;
 }
@@ -251,7 +282,7 @@ html[xmlns] .clearfix { display:block; }
 #content > div.flickr .gallery .scroller > div {
   display:inline-block;
   
-  width:500px;
+  width:600px;
   height:333px;
 }
 #content > div.flickr .gallery .scroller > div img {
