@@ -17,7 +17,7 @@ class IndexController < ApplicationController
     Twitter::Search.new.from('rdougan').each do |t|
       t = t.text
       t = t.gsub(/(^|\s)@(\w+)/, '<span class="username">\0</span>')
-      t = t.gsub(/(^|\s)#(\w+)/, '<span class="username">\0</span>')
+      t = t.gsub(/(^|\s)#(\w+)/, '<span class="hash">\0</span>')
       @tweets << t
     end
     

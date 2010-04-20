@@ -111,14 +111,14 @@ html[xmlns] .clearfix { display:block; }
   color:#666;
   font-size:12px;
   text-decoration:none;
-  text-shadow:0 1px 0 #006fc4;
+  text-shadow:0 1px 0 #fff;
   
   margin:0 0 0 7px;
   padding:2px 5px;
   
   background:#e5e5e5;
   
-  border:1px solid #006fc4;
+  border:1px solid #ddd;
   border-width:1px 1px 0 1px;
   border-top-left-radius:3px;
   -moz-border-radius-topleft:3px;
@@ -137,8 +137,11 @@ html[xmlns] .clearfix { display:block; }
 #menu > span:hover { background:#d9d9d9; }
 #menu > span.active {
   color:#fff;
+  text-shadow:0 1px 0 #006fc4;
   
   background:#007fe0;
+  
+  border-color:#006fc4;
   
   cursor:default;
 }
@@ -365,4 +368,69 @@ html[xmlns] .clearfix { display:block; }
 #social > a:hover { color:#777; }
 
 #tweet span.username { color:#007fe0; }
+/* @end */
+
+/* @group about page */
+.about > div > h2,
+.about > div > h3,
+.about > div h4 {
+  color:#888;
+  font-size:16px;
+  font-weight:bold;
+  line-height:12px;
+  text-transform:uppercase;
+  
+  height:19px;
+  
+  z-index:1;
+}
+.about > div > h3 { font-size:14px; }
+.about > div h4 {
+  color:#aaa;
+  font-size:12px;
+}
+.about > div h4.indent { margin-top:7px; }
+
+.about > div.block {
+  background:#e7e7e7;
+  background:-webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#e2e2e2));
+  
+  margin:0 0 7px 0;
+  padding:7px;
+  
+  min-height:12px;
+  
+  color:#666;
+  line-height:18px;
+  text-shadow:0 1px 0 #fff;
+}
+
+.about > div.block a:link,
+.about > div.block a:active,
+.about > div.block a:visited { color:#666; }
+.about > div.block a:hover { color:#333; }
+
+.about > div.block.things > div { margin-left:7px; }
+.about > div.block.things a {
+  display:inline-block;
+  
+  margin:0 3px 0 0;
+  padding:2px 4px;
+  
+  background:#ccc;
+  background:-webkit-gradient(linear, left top, left bottom, from(#ccc), to(#bbb));
+  
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#666;
+  font-size:12px;
+  text-decoration:none;
+}
+.about > div.block.things a:hover {
+  background:-webkit-gradient(linear, left top, left bottom, from(#c0c0c0), to(#b0b0b0));
+  
+  color:#555;
+}
 /* @end */

@@ -124,10 +124,13 @@ Ext.extend(RWD.ux.EntryManager, Ext.util.Observable, {
     if (entry.getAttribute("type") == 'blog') {
       var hash = "blog";
       RWD.historyManager.set(hash + "/" + entry.getAttribute('ref'));
+      this.currentHash = hash + "/" + entry.getAttribute('ref');
     } else {
       RWD.historyManager.set("flickr");
     };
   },
+  
+  currentHash: null,
   
   activateFirst: function(name, id) {
     if (!name) return;

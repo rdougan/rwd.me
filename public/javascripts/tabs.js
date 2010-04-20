@@ -128,6 +128,12 @@ Ext.extend(RWD.ux.TabManager, Ext.util.Observable, {
   onClick: function(tab, name) {
     this.fireEvent('tab-click', tab, name);
     
+    if (name == "blog") {
+      RWD.historyManager.set(RWD.entryManager.currentHash || "blog");
+    } else {
+      RWD.historyManager.set(name);
+    };
+    
     //set the active tab
     this.setActive(tab);
   },

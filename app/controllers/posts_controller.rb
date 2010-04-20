@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
   
   def rss
-    @posts = Post.find(:all, :order => "created_at DESC", :limit => 10, :conditions => ['published = ?', true])
+    @posts = Post.find(:all, :order => "created_at DESC", :conditions => ['published = ?', true])
     render :layout => false
     response.headers["Content-Type"] = "application/xml; charset=utf-8"
   end
