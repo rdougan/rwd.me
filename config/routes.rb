@@ -10,7 +10,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :posts
   map.resources :messages
   
-  map.rss   '/rss', :controller => 'posts', :action => 'rss'
+  map.rss   '/tweets',              :controller => 'index', :action => 'tweets'
+  map.rss   '/rss',                 :controller => 'posts', :action => 'rss'
   map.admin '/extapp/public/admin', :controller => 'index', :action => 'admin'
   
   map.root :controller => 'index', :action => 'index'

@@ -83,6 +83,10 @@ html[xmlns] .clearfix { display:block; }
   font-weight:bold;
   
   border-bottom:1px solid #ccc;
+  
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  user-select:none;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   #header h1 {
@@ -125,6 +129,10 @@ html[xmlns] .clearfix { display:block; }
   
   cursor:pointer;
   cursor:hand;
+  
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  user-select:none;
 }
 #menu > span:hover { background:#d9d9d9; }
 #menu > span.active {
@@ -146,6 +154,8 @@ html[xmlns] .clearfix { display:block; }
 /* @group entries - used for blog + flickr */
 #content > div {}
 #content > div div.entry {
+  position:relative;
+  
   background:#e7e7e7;
   background:-webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#e2e2e2));
   
@@ -159,6 +169,8 @@ html[xmlns] .clearfix { display:block; }
   opacity:0.7;
   
   -webkit-transition:opacity 250ms linear;
+  
+  z-index:1;
 }
 #content > div div.entry.expanded,
 #content > div div.entry:hover { opacity:1; }
@@ -317,27 +329,40 @@ html[xmlns] .clearfix { display:block; }
 }
 /* @end */
 
-/* @group twitter */
-#twitter {
+/* @group social links */
+#social {
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  user-select:none;
+  
   position:absolute;
   bottom:50px;
   left:50px;
   
-  color:#333;
+  color:#555;
   font-family:Georgia, "Nimbus Roman No9 L", serif;
   font-size:18px;
   font-style:italic;
-  text-shadow:0 1px 0 #ddd;
+  text-shadow:0 1px 0 #fff;
+  
+  cursor:default;
 }
-#twitter span.username {
-  color:#007fe0;
-}
-#twitter > span {
+#social > a:link,
+#social > a:active,
+#social > a:visited {
+  display:block;
+  
   color:#aaa;
   font-family:'HelveticaNeue-CondensedBold', 'Helvetica Neue Bold Condensed', Helvetica, Arial, serif;
   font-size:10px;
   font-style:normal;
+  text-decoration:none;
   text-shadow:0 1px 0 #fff;
   text-transform:uppercase;
+  
+  margin-bottom:3px;
 }
+#social > a:hover { color:#777; }
+
+#tweet span.username { color:#007fe0; }
 /* @end */

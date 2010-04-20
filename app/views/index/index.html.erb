@@ -32,6 +32,7 @@
 	<script src="javascripts/ext-core/ext-core-debug.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/application.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/history.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/tweet.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/tabs.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/slices.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/entries.js" type="text/javascript" charset="utf-8"></script>
@@ -40,12 +41,12 @@
 
 <body>
 	
-	<% if @tweet %>
-	<div id="twitter">
-		<span>Twitter</span>
-		<div class="message"><%= @tweet %></div>
+	<div id="social" style="display:none">
+		<!-- <a href="http://www.last.fm/user/rdougan">last.fm</a> -->
+		<!-- <a href="http://www.youtube.com/user/kvfb97">YouTube</a> -->
+		<a href="http://twitter.com/rdougan" target="_blank">Twitter</a>
+		<div id="tweet"></div>
 	</div>
-	<% end %>
 	
 	<div id="wrapper">
 		
