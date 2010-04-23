@@ -6195,3 +6195,1735 @@ Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
 Processing IndexController#tweets (for 127.0.0.1 at 2010-04-20 17:11:03) [GET]
   Parameters: {"_dc"=>"1271779863329"}
 Completed in 3301ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1271779863329]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#admin (for 127.0.0.1 at 2010-04-23 12:03:05) [GET]
+Redirected to http://rwd.local/
+Completed in 20ms (DB: 0) | 302 Found [http://rwd.local/extapp/public/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:03:05) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (11.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 511ms (View: 423, DB: 12) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:03:06) [GET]
+  Parameters: {"_dc"=>"1272020586620"}
+Completed in 1494ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020586620]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-04-23 12:03:11) [GET]
+Rendering sessions/new
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://rwd.local/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-23 12:03:13) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"SX4YJk1n53rtMzKKMY5OwxfsyE1ERp7SaFD+HuT35w4=", "login"=>"me@rwd.me", "password"=>"tayt0123!#"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'me@rwd.me') LIMIT 1[0m
+Failed login for 'me@rwd.me' from 127.0.0.1 at Fri Apr 23 11:03:13 UTC 2010
+Rendering sessions/new
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://rwd.local/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-23 12:03:15) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"SX4YJk1n53rtMzKKMY5OwxfsyE1ERp7SaFD+HuT35w4=", "login"=>"rdougan", "password"=>"tayt0123!#"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'rdougan') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://rwd.local/
+Completed in 10ms (DB: 2) | 302 Found [http://rwd.local/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:03:15) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:03:15) [GET]
+  Parameters: {"_dc"=>"1272020595810"}
+Completed in 1048ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020595810]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#admin (for 127.0.0.1 at 2010-04-23 12:03:19) [GET]
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering index/admin
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://rwd.local/extapp/public/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-23 12:03:19) [GET]
+
+ActionController::RoutingError (No route matches "/extapp/vendor/plugins/CodeMirror/CodeMirror/js/codemirror.js" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-23 12:03:21) [GET]
+
+ActionController::RoutingError (No route matches "/extapp/vendor/plugins/CodeMirror/CodeMirror/js/codemirror.js" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:22) [GET]
+  Parameters: {"_dc"=>"1272020602129"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://rwd.local/posts?_dc=1272020602129]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-04-23 12:03:25) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 10) [0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTagging Load (46.3ms)[0m   [0mSELECT * FROM `taggings` WHERE (`taggings`.taggable_id = 10 AND `taggings`.taggable_type = 'Post') [0m
+  [4;36;1mPost Destroy (32.4ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 10[0m
+  [4;35;1mSQL (9.3ms)[0m   [0mCOMMIT[0m
+Completed in 137ms (View: 1, DB: 90) | 200 OK [http://rwd.local/posts/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:25) [GET]
+  Parameters: {"_dc"=>"1272020605472"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020605472]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:25) [GET]
+  Parameters: {"_dc"=>"1272020605478"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 51ms (View: 37, DB: 2) | 200 OK [http://rwd.local/posts?_dc=1272020605478]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-04-23 12:03:27) [DELETE]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 9) [0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTagging Load (0.2ms)[0m   [0mSELECT * FROM `taggings` WHERE (`taggings`.taggable_id = 9 AND `taggings`.taggable_type = 'Post') [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 9[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Completed in 24ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:27) [GET]
+  Parameters: {"_dc"=>"1272020607655"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:27) [GET]
+  Parameters: {"_dc"=>"1272020607662"}
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020607655]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020607662]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-04-23 12:03:30) [DELETE]
+  Parameters: {"id"=>"11"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 11) [0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTagging Load (0.4ms)[0m   [0mSELECT * FROM `taggings` WHERE (`taggings`.taggable_id = 11 AND `taggings`.taggable_type = 'Post') [0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 11[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Completed in 15ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:30) [GET]
+  Parameters: {"_dc"=>"1272020610480"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://rwd.local/posts?_dc=1272020610480]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:03:30) [GET]
+  Parameters: {"_dc"=>"1272020610487"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://rwd.local/posts?_dc=1272020610487]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-04-23 12:08:27) [POST]
+  Parameters: {"post"=>{"body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n  <quote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</quote>\n  As with all Ed's work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "published"=>"true"}}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO `posts` (`created_at`, `title`, `body`, `updated_at`, `published`) VALUES('2010-04-23 11:08:27', 'jaml.tmbundle - a Jaml TextMate Bundle', '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n <quote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</quote>\n As with all Ed\'s work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>', '2010-04-23 11:08:27', 1)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 18ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:08:27) [GET]
+  Parameters: {"_dc"=>"1272020907466"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` [0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 56ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020907466]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:08:32) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 13ms (View: 8, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:08:32) [GET]
+  Parameters: {"_dc"=>"1272020912774"}
+Completed in 937ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020912774]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-04-23 12:08:57) [PUT]
+  Parameters: {"post"=>{"created_at"=>"2010-04-23T11:08:27Z", "body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n</p>\n\n<quote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</quote>\n\n<p>\n  As with all Ed's work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "updated_at"=>"2010-04-23T11:08:27Z", "published"=>"true", "id"=>"12"}, "id"=>"12"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.3ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-04-23 11:08:57', `body` = '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n</p>\n\n<quote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</quote>\n\n<p>\n As with all Ed\'s work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>' WHERE `id` = 12[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Completed in 18ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:08:57) [GET]
+  Parameters: {"_dc"=>"1272020937524"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020937524]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:08:59) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:08:59) [GET]
+  Parameters: {"_dc"=>"1272020939875"}
+Completed in 842ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020939875]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:09:40) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:09:40) [GET]
+  Parameters: {"_dc"=>"1272020980842"}
+Completed in 1010ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020980842]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-04-23 12:09:56) [PUT]
+  Parameters: {"post"=>{"created_at"=>"2010-04-23T11:08:27Z", "body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n  As with all Ed's work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "updated_at"=>"2010-04-23T11:08:57Z", "published"=>"true", "id"=>"12"}, "id"=>"12"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2010-04-23 11:09:56', `body` = '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n As with all Ed\'s work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>' WHERE `id` = 12[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 17ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/12]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:09:56) [GET]
+  Parameters: {"_dc"=>"1272020996269"}
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 57ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272020996269]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:09:57) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:09:57) [GET]
+  Parameters: {"_dc"=>"1272020997931"}
+Completed in 581ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272020997931]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:10:13) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:10:13) [GET]
+  Parameters: {"_dc"=>"1272021013699"}
+Completed in 581ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021013699]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:10:36) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:10:36) [GET]
+  Parameters: {"_dc"=>"1272021036647"}
+Completed in 1018ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021036647]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:11:18) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:11:18) [GET]
+  Parameters: {"_dc"=>"1272021078435"}
+Completed in 1184ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021078435]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:11:38) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:11:38) [GET]
+  Parameters: {"_dc"=>"1272021098725"}
+Completed in 1392ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021098725]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:11:41) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 56ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:11:41) [GET]
+  Parameters: {"_dc"=>"1272021101885"}
+Completed in 819ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021101885]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:11:46) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:11:46) [GET]
+  Parameters: {"_dc"=>"1272021106659"}
+Completed in 562ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021106659]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:11:51) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:11:51) [GET]
+  Parameters: {"_dc"=>"1272021111115"}
+Completed in 567ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021111115]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:12:02) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:12:02) [GET]
+  Parameters: {"_dc"=>"1272021122196"}
+Completed in 722ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021122196]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:12:10) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:12:10) [GET]
+  Parameters: {"_dc"=>"1272021130309"}
+Completed in 621ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021130309]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:12:18) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:12:18) [GET]
+  Parameters: {"_dc"=>"1272021138533"}
+Completed in 1346ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021138533]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:24:50) [GET]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:24:50) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+Rendering index/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 475ms (View: 434, DB: 2) | 200 OK [http://rwd.local/]
+Completed in 469ms (View: 434, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:24:51) [GET]
+  Parameters: {"_dc"=>"1272021891479"}
+Completed in 742ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021891479]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:24:59) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:00) [GET]
+  Parameters: {"_dc"=>"1272021900046"}
+Completed in 645ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021900046]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:05) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:05) [GET]
+  Parameters: {"_dc"=>"1272021905466"}
+Completed in 679ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021905466]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:20) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:20) [GET]
+  Parameters: {"_dc"=>"1272021920648"}
+Completed in 575ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021920648]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:24) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:24) [GET]
+  Parameters: {"_dc"=>"1272021924095"}
+Completed in 571ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021924095]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:32) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:33) [GET]
+  Parameters: {"_dc"=>"1272021932958"}
+Completed in 974ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021932958]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:37) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:37) [GET]
+  Parameters: {"_dc"=>"1272021937691"}
+Completed in 700ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021937691]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:40) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:40) [GET]
+  Parameters: {"_dc"=>"1272021940748"}
+Completed in 591ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021940748]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:25:49) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 54ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:25:50) [GET]
+  Parameters: {"_dc"=>"1272021950083"}
+Completed in 773ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021950083]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:26:00) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:26:00) [GET]
+  Parameters: {"_dc"=>"1272021960328"}
+Completed in 833ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021960328]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:26:36) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:26:36) [GET]
+  Parameters: {"_dc"=>"1272021996727"}
+Completed in 760ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272021996727]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:26:40) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:26:40) [GET]
+  Parameters: {"_dc"=>"1272022000437"}
+Completed in 555ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022000437]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:26:49) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:26:50) [GET]
+  Parameters: {"_dc"=>"1272022010037"}
+Completed in 564ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022010037]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:26:53) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:26:54) [GET]
+  Parameters: {"_dc"=>"1272022014054"}
+Completed in 675ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022014054]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:27:02) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:27:02) [GET]
+  Parameters: {"_dc"=>"1272022022974"}
+Completed in 620ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022022974]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:27:47) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:27:47) [GET]
+  Parameters: {"_dc"=>"1272022067871"}
+Completed in 961ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022067871]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:28:09) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:28:09) [GET]
+  Parameters: {"_dc"=>"1272022089786"}
+Completed in 812ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022089786]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:28:12) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:28:12) [GET]
+  Parameters: {"_dc"=>"1272022092956"}
+Completed in 596ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022092956]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:28:16) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:28:16) [GET]
+  Parameters: {"_dc"=>"1272022096784"}
+Completed in 579ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022096784]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:28:42) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 54ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:28:42) [GET]
+  Parameters: {"_dc"=>"1272022122796"}
+Completed in 1375ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022122796]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:28:54) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:28:54) [GET]
+  Parameters: {"_dc"=>"1272022134340"}
+Completed in 768ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022134340]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:01) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:01) [GET]
+  Parameters: {"_dc"=>"1272022141187"}
+Completed in 961ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022141187]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:19) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:19) [GET]
+  Parameters: {"_dc"=>"1272022159854"}
+Completed in 595ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022159854]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:30) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:30) [GET]
+  Parameters: {"_dc"=>"1272022170909"}
+Completed in 1097ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022170909]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:41) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:41) [GET]
+  Parameters: {"_dc"=>"1272022181982"}
+Completed in 610ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022181982]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:51) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:51) [GET]
+  Parameters: {"_dc"=>"1272022191494"}
+Completed in 545ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022191494]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:29:55) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:29:55) [GET]
+  Parameters: {"_dc"=>"1272022195803"}
+Completed in 570ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022195803]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:01) [GET]
+  Parameters: {"_dc"=>"1272022201504"}
+Completed in 685ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022201504]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:09) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:09) [GET]
+  Parameters: {"_dc"=>"1272022209488"}
+Completed in 1597ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022209488]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:24) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:24) [GET]
+  Parameters: {"_dc"=>"1272022224525"}
+Completed in 595ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022224525]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:31) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:31) [GET]
+  Parameters: {"_dc"=>"1272022231113"}
+Completed in 603ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022231113]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:38) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:38) [GET]
+  Parameters: {"_dc"=>"1272022238418"}
+Completed in 588ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022238418]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:42) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:42) [GET]
+  Parameters: {"_dc"=>"1272022242501"}
+Completed in 563ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022242501]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:49) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:49) [GET]
+  Parameters: {"_dc"=>"1272022249514"}
+Completed in 968ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022249514]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:54) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:54) [GET]
+  Parameters: {"_dc"=>"1272022254463"}
+Completed in 641ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022254463]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:30:58) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:30:58) [GET]
+  Parameters: {"_dc"=>"1272022258807"}
+Completed in 571ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022258807]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:31:07) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 55ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:31:07) [GET]
+  Parameters: {"_dc"=>"1272022267549"}
+Completed in 607ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022267549]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:31:12) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:31:12) [GET]
+  Parameters: {"_dc"=>"1272022272220"}
+Completed in 663ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022272220]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:31:21) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:31:21) [GET]
+  Parameters: {"_dc"=>"1272022281213"}
+Completed in 580ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022281213]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:31:40) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:31:40) [GET]
+  Parameters: {"_dc"=>"1272022300361"}
+Completed in 1188ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022300361]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-04-23 12:31:58) [PUT]
+  Parameters: {"post"=>{"created_at"=>"2010-04-23T11:08:27Z", "body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n  As with all Ed's work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n  <br />\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "updated_at"=>"2010-04-23T11:09:56Z", "published"=>"true", "id"=>"12"}, "id"=>"12"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2010-04-23 11:31:58', `body` = '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n As with all Ed\'s work- it does a good job, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n <br />\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>' WHERE `id` = 12[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 18ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/12]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:31:58) [GET]
+  Parameters: {"_dc"=>"1272022318441"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` [0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272022318441]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:31:59) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:31:59) [GET]
+  Parameters: {"_dc"=>"1272022319359"}
+Completed in 837ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022319359]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:32:23) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:32:23) [GET]
+  Parameters: {"_dc"=>"1272022343497"}
+Completed in 993ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022343497]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:32:27) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (118.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 125ms (View: 2, DB: 119) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:32:28) [GET]
+  Parameters: {"_dc"=>"1272022348149"}
+Completed in 562ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022348149]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:32:40) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:32:40) [GET]
+  Parameters: {"_dc"=>"1272022360132"}
+Completed in 562ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022360132]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:32:49) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:32:49) [GET]
+  Parameters: {"_dc"=>"1272022369424"}
+Completed in 576ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022369424]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-04-23 12:35:12) [PUT]
+  Parameters: {"post"=>{"created_at"=>"2010-04-23T11:08:27Z", "body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n  As with all Ed's work- it is awesome, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n  <br />\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "updated_at"=>"2010-04-23T11:31:58Z", "published"=>"true", "id"=>"12"}, "id"=>"12"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.3ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-04-23 11:35:12', `body` = '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n As with all Ed\'s work- it is awesome, however it needed a TextMate bundle to make it a little quicker to use, so I through one together:\n <br />\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>' WHERE `id` = 12[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Completed in 17ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:35:12) [GET]
+  Parameters: {"_dc"=>"1272022512410"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` [0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272022512410]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:35:17) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:35:17) [GET]
+  Parameters: {"_dc"=>"1272022517669"}
+Completed in 1263ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022517669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-04-23 12:35:30) [PUT]
+  Parameters: {"post"=>{"created_at"=>"2010-04-23T11:08:27Z", "body"=>"<p>\n  I've been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby's Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n  As with all Ed's work- it is awesome, however it needed a TextMate bundle to make it a little quicker to use, so I put one together:\n  <br />\n  <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>", "title"=>"jaml.tmbundle - a Jaml TextMate Bundle", "updated_at"=>"2010-04-23T11:35:12Z", "published"=>"true", "id"=>"12"}, "id"=>"12"}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.2ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2010-04-23 11:35:30', `body` = '<p>\n I\'ve been using <a href=\"http://edspencer.net/\" target=\"_blank\">Ed Spencers</a> <a href=\"http://github.com/edspencer/jaml\" target=\"_blank\">Jaml</a> library the past few days, which emulates Ruby\'s Haml library:\n</p>\n\n<blockquote>Jaml tries to emulate Ruby’s Haml library, making it easy to generate HTML in your JavaScript projects.</blockquote>\n\n<p>\n As with all Ed\'s work- it is awesome, however it needed a TextMate bundle to make it a little quicker to use, so I put one together:\n <br />\n <a href=\"http://github.com/rdougan/jaml.tmbundle\" target=\"_blank\" class=\"main\">jaml.tmbundle - on GitHub</a>\n</p>' WHERE `id` = 12[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Completed in 18ms (View: 1, DB: 3) | 200 OK [http://rwd.local/posts/12]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-23 12:35:30) [GET]
+  Parameters: {"_dc"=>"1272022530346"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` [0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/posts?_dc=1272022530346]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:35:32) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:35:32) [GET]
+  Parameters: {"_dc"=>"1272022532233"}
+Completed in 639ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022532233]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:36:16) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:36:16) [GET]
+  Parameters: {"_dc"=>"1272022576517"}
+Completed in 1157ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022576517]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:36:31) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:36:31) [GET]
+  Parameters: {"_dc"=>"1272022591628"}
+Completed in 783ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022591628]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:37:14) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 55ms (View: 50, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:37:14) [GET]
+  Parameters: {"_dc"=>"1272022634148"}
+Completed in 1006ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022634148]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:37:38) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:37:38) [GET]
+  Parameters: {"_dc"=>"1272022658844"}
+Completed in 581ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022658844]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:38:02) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:38:03) [GET]
+  Parameters: {"_dc"=>"1272022683017"}
+Completed in 974ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022683017]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:38:19) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:38:19) [GET]
+  Parameters: {"_dc"=>"1272022699164"}
+Completed in 1845ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022699164]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:38:36) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:38:36) [GET]
+  Parameters: {"_dc"=>"1272022716467"}
+Completed in 575ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022716467]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:39:35) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:39:35) [GET]
+  Parameters: {"_dc"=>"1272022775801"}
+Completed in 1018ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022775801]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:39:57) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:39:57) [GET]
+  Parameters: {"_dc"=>"1272022797979"}
+Completed in 594ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022797979]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:40:04) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:40:04) [GET]
+  Parameters: {"_dc"=>"1272022804370"}
+Completed in 706ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022804370]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:40:38) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:40:39) [GET]
+  Parameters: {"_dc"=>"1272022838971"}
+Completed in 959ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022838971]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:41:01) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:41:01) [GET]
+  Parameters: {"_dc"=>"1272022861733"}
+Completed in 661ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022861733]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:41:06) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:41:06) [GET]
+  Parameters: {"_dc"=>"1272022866470"}
+Completed in 639ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022866470]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:41:15) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:41:15) [GET]
+  Parameters: {"_dc"=>"1272022875549"}
+Completed in 648ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022875549]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:41:25) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:41:25) [GET]
+  Parameters: {"_dc"=>"1272022885150"}
+Completed in 975ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022885150]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:41:42) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:41:43) [GET]
+  Parameters: {"_dc"=>"1272022902988"}
+Completed in 615ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272022902988]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:44:16) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:44:17) [GET]
+  Parameters: {"_dc"=>"1272023057026"}
+Completed in 1029ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023057026]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:45:32) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:45:32) [GET]
+  Parameters: {"_dc"=>"1272023132084"}
+Completed in 987ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023132084]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:46:11) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:46:11) [GET]
+  Parameters: {"_dc"=>"1272023171694"}
+Completed in 1158ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023171694]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:46:41) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:46:42) [GET]
+  Parameters: {"_dc"=>"1272023202010"}
+Completed in 2078ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023202010]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:46:46) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:46:46) [GET]
+  Parameters: {"_dc"=>"1272023206732"}
+Completed in 761ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023206732]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:46:57) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:46:57) [GET]
+  Parameters: {"_dc"=>"1272023217785"}
+Completed in 967ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023217785]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-04-23 12:47:11) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering index/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://rwd.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#tweets (for 127.0.0.1 at 2010-04-23 12:47:11) [GET]
+  Parameters: {"_dc"=>"1272023231190"}
+Completed in 975ms (View: 1, DB: 0) | 200 OK [http://rwd.local/tweets?_dc=1272023231190]
