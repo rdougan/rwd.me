@@ -9,6 +9,8 @@ body,
 html {
   font-family:'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size:14px;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
   
   background:url(../images/background.png);
 }
