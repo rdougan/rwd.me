@@ -263,11 +263,11 @@ html[xmlns] .clearfix { display:block; }
 #content > div div.entry a:visited.main {
   display:inline-block;
   
-  margin:7px 0 0 0;
+  margin:7px 0 7px 0;
   padding:2px 7px;
   
   background:#ccc;
-  background:-webkit-gradient(linear, left top, left bottom, from(#ccc), to(#aaa));
+  background:-webkit-gradient(linear, left top, left bottom, from(#bbb), to(#aaa));
   
   border-radius:5px;
   -moz-border-radius:5px;
@@ -276,10 +276,10 @@ html[xmlns] .clearfix { display:block; }
   color:#eee;
   font-weight:bold;
   text-align:center;
-  text-shadow:0 1px 0px #666;
+  text-shadow:0 1px 0px #888;
   text-decoration:none;
   
-  opacity:.6;
+  opacity:.8;
   -webkit-transition:opacity 250ms linear;
 }
 #content > div div.entry a:hover.main { opacity:1; }
